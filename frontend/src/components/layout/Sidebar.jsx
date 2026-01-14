@@ -79,7 +79,7 @@ export function Sidebar() {
               "hover:bg-white/5 group",
               isActive && "bg-primary/10 border-l-2 border-primary"
             )}
-            data-testid={`nav-${item.label.toLowerCase()}`}
+            data-testid={`nav-link-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
           >
             {({ isActive }) => (
               <>
