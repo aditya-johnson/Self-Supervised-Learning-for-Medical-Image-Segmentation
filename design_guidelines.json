@@ -1,0 +1,150 @@
+{
+  "identity": {
+    "persona": "E1",
+    "philosophy": "The Anti-AI Designer",
+    "principles": [
+      "Fusion over Imitation: Medical Imaging x Sci-Fi HUD x Swiss Precision",
+      "Emotion First: Clinical precision, trust, and 'dark room' focus",
+      "Content is King: Data is the hero; UI is the frame",
+      "Negative Space: Critical for separating dense medical data",
+      "Contrast: High-contrast neon against deep slate for readability in dark environments"
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Manrope, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "bold": 700
+    },
+    "usage": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight text-foreground",
+      "h2": "text-3xl font-semibold tracking-tight text-foreground/90",
+      "h3": "text-2xl font-medium text-foreground/90",
+      "body": "text-base leading-relaxed text-muted-foreground",
+      "caption": "text-xs font-mono text-muted-foreground/70 uppercase tracking-wider",
+      "data_value": "font-mono text-lg font-medium text-primary"
+    },
+    "installation": "Import fonts via Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;700&display=swap');"
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": "#020617",
+      "foreground": "#f8fafc",
+      "card": "#0f172a",
+      "card_foreground": "#f8fafc",
+      "popover": "#0f172a",
+      "popover_foreground": "#f8fafc",
+      "primary": "#06b6d4",
+      "primary_foreground": "#000000",
+      "secondary": "#1e293b",
+      "secondary_foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted_foreground": "#94a3b8",
+      "accent": "#06b6d4",
+      "accent_foreground": "#000000",
+      "destructive": "#ef4444",
+      "destructive_foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#06b6d4"
+    },
+    "semantic": {
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "info": "#3b82f6",
+      "tumor_highlight": "#ef4444",
+      "organ_highlight": "#06b6d4"
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at center, rgba(6,182,212,0.15) 0%, rgba(2,6,23,0) 70%)",
+      "active_border": "linear-gradient(90deg, transparent, #06b6d4, transparent)"
+    }
+  },
+  "visual_enhancers": {
+    "borders": "1px solid rgba(148, 163, 184, 0.1)",
+    "glassmorphism": {
+      "default": "bg-slate-950/70 backdrop-blur-md border border-white/10",
+      "heavy": "bg-slate-950/90 backdrop-blur-xl border border-white/10"
+    },
+    "shadows": {
+      "glow": "0 0 20px -5px rgba(6, 182, 212, 0.3)",
+      "card": "0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3)"
+    },
+    "radius": {
+      "default": "rounded-md",
+      "button": "rounded-md",
+      "card": "rounded-lg"
+    }
+  },
+  "layout_strategies": {
+    "dashboard_grid": "grid grid-cols-1 md:grid-cols-12 gap-4 p-4 md:p-6",
+    "bento_grid": {
+      "wrapper": "grid grid-cols-1 md:grid-cols-4 gap-4",
+      "hero_cell": "md:col-span-2 md:row-span-2",
+      "tall_cell": "md:col-span-1 md:row-span-2",
+      "standard_cell": "md:col-span-1 md:row-span-1"
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-8",
+      "section_gap": "gap-8"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all duration-300",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-white/5",
+      "ghost": "hover:bg-white/5 hover:text-primary"
+    },
+    "cards": {
+      "default": "bg-card border border-border/50 shadow-lg hover:border-primary/30 transition-colors duration-300",
+      "interactive": "group relative overflow-hidden bg-card border border-border/50 hover:border-primary/50 transition-all duration-300"
+    },
+    "inputs": {
+      "default": "bg-background border-input focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all duration-200"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-300 ease-out",
+    "hover_effects": "hover:-translate-y-1 hover:shadow-lg",
+    "page_transition": {
+      "initial": { "opacity": 0, "y": 20 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -20 }
+    }
+  },
+  "image_urls": {
+    "placeholders": {
+      "ct_scan": "https://placehold.co/800x600/020617/06b6d4?text=CT+Scan+Visualization&font=roboto",
+      "mri_scan": "https://placehold.co/800x600/020617/06b6d4?text=MRI+Scan+Analysis&font=roboto",
+      "pet_scan": "https://placehold.co/800x600/020617/ef4444?text=PET+Scan+Tumor+Detection&font=roboto",
+      "user_avatar": "https://placehold.co/100x100/1e293b/f8fafc?text=DR",
+      "hero_bg": "https://placehold.co/1920x1080/020617/0f172a?text=Medical+AI+Platform+Background"
+    },
+    "instructions": "Use these placeholder URLs for the MVP. Ensure they are replaced with real medical imaging data or high-quality assets in production. Do not leave empty src attributes."
+  },
+  "instructions_to_main_agent": [
+    "1. THEME SETUP: Ensure 'dark' class is applied to the html/body by default. The app is 'Dark Mode First'.",
+    "2. FONT SETUP: Add the Google Fonts import to index.css immediately.",
+    "3. SHADCN CUSTOMIZATION: Override the default radius in tailwind.config.js to 0.5rem (rounded-md) for a technical feel.",
+    "4. LAYOUT: Use the 'Control Room' grid strategy for the dashboard. Avoid large empty white spaces. Use borders and subtle background differences to define areas.",
+    "5. CHARTS: Use Recharts with the custom palette defined in 'colors.semantic'. Ensure grid lines are very subtle (opacity 0.1).",
+    "6. VOLUME VIEWER: For the MVP, create a 'Mock' Volume Viewer component using a dark canvas with a grid overlay and the 'ct_scan' placeholder image centered. Add UI controls (sliders) around it to simulate functionality.",
+    "7. DATA-TESTID: Add data-testid attributes to all interactive elements (buttons, inputs, cards) as 'category-function-element' (e.g., 'dashboard-upload-button').",
+    "8. NO GRADIENT TEXT: Do not use gradient text for headings. It reduces readability in medical contexts. Use solid, high-contrast white or off-white.",
+    "9. BORDERS: Use 'border-white/10' for subtle separation. Avoid heavy borders."
+  ],
+  "universal_guidelines": [
+    "Avoid 'AI Slop': Do not use generic centered layouts. Use asymmetric grids.",
+    "Micro-Interactions: Every button must have a hover state (brightness up or subtle lift).",
+    "Spacing: Use p-6 or p-8 for container padding. Don't cram content.",
+    "Glassmorphism: Use backdrop-blur-md for floating elements (navbars, modals).",
+    "Accessibility: Ensure all text meets WCAG AA contrast ratios against the dark background."
+  ]
+}
